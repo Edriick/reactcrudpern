@@ -1,59 +1,46 @@
-# Docker PERN Template
+## Video Prueba
+[https://youtu.be/kpCdFfyXG0E](https://youtu.be/kpCdFfyXG0E)
 
-The purpose of this repo is to provide a template so you can quickly get up and running with a PERN stack application.
+## Información
 
-## How To Use
+El frontend se encuentra en el puerto 8000
+[http://localhost:8000](http://localhost:8000)
 
-Once you have started the Docker container using the provided tools and commands below you will need to navigate to [http://localhost:8000](http://localhost:8000).
+El backend se encuentra en el puerto 3000
+[http://localhost:3000](http://localhost:3000)
 
-### Dependancies
+El PgAdmin4 se encuentra en el puerto 5050
+[http://localhost:5050](http://localhost:5050)
 
-You will need to install:
+La base de datos corre en el puerto 5432
 
+### Dependencias
 - [Docker](https://docs.docker.com/get-docker/)
 - [Node.JS / NPM](https://nodejs.org/en/download/)
 
-### Controls
+### Comandos
 
-Starts Docker containers and networks (will build first if no build exists):
-
-```
-npm run docker:up
-```
-
-Builds Docker images from a docker-compose.yml, Dockerfile and "context";
+Inicia contenedores y redes de Docker
 
 ```
-npm run docker:build
+docker-compose up
+```
+Detiene contenedores y redes de Docker
+
+```
+docker-compose down
 ```
 
-Stops Docker containers and networks:
+### Acceso a PgAdmin4
 
-```
-npm run docker:down
-```
-
-### Access to PgAdmin4
-
-- **URL:** [http://localhost:8000](http://localhost:8000)
+- **URL:** [http://localhost:5050](http://localhost:5050)
 - **Username:** `pgadmin4@pgadmin.org`
 - **Password:** `admin`
 
-#### Add a new server in PgAdmin4
+#### Añadir un Nuevo servidor en PgAdmin4
 
 - **Host name/address** `db`
 - **Port** `5432`
 - **Username** `pern_db`
 - **Password** `root`
 
-## Technologies Used
-
-- Docker
-- PostgreSQL
-- Express JS
-- React
-- Node JS
-
-## Abbreviations Used
-
-- PERN = (PostgreSQL, Express JS, React, Node.JS)
