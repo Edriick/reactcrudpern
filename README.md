@@ -37,7 +37,9 @@ docker-compose down
 - **Username:** `pgadmin4@pgadmin.org`
 - **Password:** `admin`
 
-#### Añadir un Nuevo servidor en PgAdmin4
+### En caso de no recibir datos
+#### Añadir un Nuevo servidor en PgAdmin4 con nombre db
+**En la pestaña de conexión ingresar los siguientes datos** 
 
 - **Host name/address** `db`
 - **Port** `5432`
