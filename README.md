@@ -46,3 +46,4 @@ docker-compose down
 - **Username** `pern_db`
 - **Password** `root`
 
+**importar la base de datos que esta ubicada en db/docker_postgres_init.sql** 
